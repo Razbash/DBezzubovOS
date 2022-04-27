@@ -1,0 +1,66 @@
+.setting-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    &__colors {
+        display: inline-flex;
+        gap: 12px;
+    }
+
+    &__label {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    &__color {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &--blue {
+            background-color: #0f1ae2;
+        }
+
+        &--green {
+            background-color: green;
+        }
+
+        &--yellow {
+            background-color: yellow;
+        }
+
+        &--orange {
+            background-color: orange;
+        }
+
+        &--red {
+            background-color: red;
+        }
+
+        &--pink {
+            background-color: pink;
+        }
+
+        &--purple {
+            background-color: purple;
+        }
+
+        &--violet {
+            background-color: violet;
+        }
+    }
+
+    &__background {
+        width: 200px;
+        height: 100%;
+        cursor: pointer;
+    }
+}
