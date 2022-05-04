@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+
+.summary {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 800px;
+
+    &__left {
+        padding: 20px 40px;
+        background-color: #494e5f;
+        width: 330px;
+
+        .section {
+            margin-bottom: 40px;
+
+            &__title {
+                color: #ffe7d4;
+                text-transform: uppercase;
+                font-size: 16px;
+                margin-bottom: 10px;
+                line-height: 24px;
+            }
+
+            &__text {
+                font-size: 9px;
+                color: #fefefa;
+            }
+
+            &__group {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+
+    &__right {
+        background: #fefefa;
+        padding: 20px 40px;
+
+        .section {
+            color: #494e5f;
+
+            &__title {
+                text-transform: uppercase;
+                background: #ffe7d4;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 20px;
+                letter-spacing: 0.07em;
+            }
+
+            &__name {
+                font-weight: 700;
+                font-size: 15px;
+                margin-bottom: 10px;
+                letter-spacing: 0.01em;
+            }
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+
+            &__subname {
+                margin-bottom: 10px;
+                font-size: 13px;
+                letter-spacing: 0.09em;
+                font-weight: 400;
+            }
+
+            &__text {
+                margin-top: 0;
+                font-weight: 400;
+                color: #494e5f;
+                font-size: 11px;
+            }
+        }
+    }
+
+    &__photo {
+        width: 230px;
+        border-radius: 100%;
+    }
+
+    &__name {
+        color: #ffe7d4;
+        text-transform: uppercase;
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+
+    &__profession {
+        text-transform: uppercase;
+        color: #fefefa;
+        font-size: 14px;
+        letter-spacing: 0.17em;
+        margin-bottom: 20px;
+    }
+
+    &__separator {
+        width: 100%;
+        height: 2px;
+        background: #ffe7d4;
+        margin-bottom: 20px;
+    }
+}

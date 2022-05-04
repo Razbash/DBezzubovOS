@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import Window from '../Window/Window';
-import Settings from '../Settings/Settings';
 import './appIcon.scss';
 
 interface ButtonProps {
     name: string;
     icon: string;
+    component: React.ReactNode;
 }
 
-const AppIcon: React.FC<ButtonProps> = ({name, icon}) => {
+const AppIcon: React.FC<ButtonProps> = ({name, icon, component}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const openWindow = () => {
@@ -35,8 +35,8 @@ const AppIcon: React.FC<ButtonProps> = ({name, icon}) => {
             </div>
 
             {isOpen ?
-                <Window name="Настройки" closeEvent={closeWindow}>
-                    <Settings/>
+                <Window name={name} closeEvent={closeWindow}>
+                    {component}
                 </Window>
                 : null
             }
