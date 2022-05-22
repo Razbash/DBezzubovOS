@@ -23,7 +23,6 @@
         width: 30px;
         height: 30px;
         border-radius: 100%;
-        cursor: pointer;
 
         &--blue {
             background-color: #0f1ae2;
@@ -61,6 +60,5 @@
     &__background {
         width: 200px;
         height: 100%;
-        cursor: pointer;
     }
 }

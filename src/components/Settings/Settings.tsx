@@ -1,10 +1,10 @@
-import './settings.scss';
 import cityImage from '../../assets/backgrounds/city.jpg';
 import leavesImage from '../../assets/backgrounds/leaves.jpg';
 import mountainsImage from '../../assets/backgrounds/mountains.jpg';
 import skyImage from '../../assets/backgrounds/sky.jpg';
 import spaceImage from '../../assets/backgrounds/space.jpg';
 import sunsetImage from '../../assets/backgrounds/sunset.jpg';
+import './settings.scss';
 
 const Settings = () => {
     return(
